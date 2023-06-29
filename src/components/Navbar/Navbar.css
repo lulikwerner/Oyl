@@ -1,0 +1,235 @@
+/* Navbar.css */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 0%;
+  margin-bottom: -1.5%;
+  background-color: #FAE6CE;
+}
+#retrato{
+  margin-top: 9%;
+ }
+nav{
+  height:20vh;
+}
+.nav ul {
+  list-style: none;
+}
+.menu {
+
+  display: flex;
+  list-style: none;
+  color:black;
+  margin-left: 50%;
+
+
+  a {
+    margin-top: -10%;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 10px -5% 20px 30px;
+    font-size: medium;
+    color: pink;
+    text-decoration: none;
+    list-style: none;
+    animation: movedown 1s linear 1;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 0;
+      bottom: 0;
+      left: 0;
+      background-color: pink;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: black;
+      &:after {
+        width: 100%;
+        color: blue;
+      }
+    }
+  }
+}
+.menu a{
+  text-decoration: none; /* Added property */
+  color: #101010;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+font-family: 'Poppins';
+}
+.menu a.active,
+.menu a:hover {
+  text-decoration: underline;
+  /* Add any other hover styles you want */
+}
+.inicio {
+  margin-left: -85%;
+  margin-top: -15%;
+}
+.produNav{
+  margin-top: -15%;
+  margin-left: 10%;
+}
+.pregFrec{
+  margin-top: -15%;
+  margin-left: 110%;
+}
+.open-menu{
+margin-top: 0%;
+margin-left: -5%;
+  color: #F5037C;
+  font-size: 1.5rem;
+}
+.close-menu {
+  display: none;
+  margin-top: -15%;
+  margin-left: 0%;
+    color: #F5037C;
+    font-size: 1.5rem;
+  }
+.open-menu {
+  ul {
+    li {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}
+.close-menu {
+  top: 57px;
+  right: 22px;
+}
+#check {
+  display: none;
+}
+.logo{
+  list-style: none;
+}
+.logo img {
+  margin-left: 40%;
+  padding-top: 1%;
+  display: absolute;
+  margin-bottom: 2%;
+  width: 15%;
+  height: 120px;
+
+
+}
+
+
+
+@media only screen and (max-width: 360px) {
+  /* Navbar.css */
+header {
+  position: fixed;
+  height: 5%;
+}
+  nav {
+    height: 5vh;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+
+  .menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #F5037C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    font-family: 'Poppins';
+  }
+
+  .menu a.active,
+  .menu a:hover {
+    text-decoration: underline;
+    /* Add any other hover styles you want */
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submenu li {
+    padding-left: 30px;
+    float: none;
+  }
+
+  .dropdown_menu {
+    display: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    position: absolute;
+    display: block;
+  }
+
+  .open-menu {
+    position: relative;
+    ul li {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  nav {
+    height: 6vh;
+  }
+
+  .logo img {
+    display: none;
+  }
+  .inicio {
+    margin-left: 10%;
+    margin-top:-30%;
+    margin-bottom: 0%;
+
+  }
+  .produNav{
+    margin-top: 30%;
+    margin-bottom: 30%;
+    margin-left: 10%;
+  }
+  .pregFrec{
+    margin-bottom: 150%;
+    margin-left: 10%;
+  }
+
+}
+

@@ -1,0 +1,288 @@
+.line-container{
+    background-color: #F5CFA2;
+    width:100%;
+    color:black;
+    display: flex;
+    height: 53px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+   
+}
+.arrow-cursor {
+  cursor: pointer;
+}
+.line-container p {
+    margin-bottom: 8%;
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+.custom-h6{
+  margin-left: 10%;
+}
+.top-container{
+    background-color: #FAE6CE;
+    width:100%;
+}
+.top-container p{
+  margin-left: 10%;
+}
+.container-f{
+    background-color: #FAE6CE !important;
+    margin-bottom: 0%!important ;
+}
+.titR{
+  margin-left: 12%;
+    margin-top: 10%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.tit{
+    margin-top: 14%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+p {
+    margin-bottom: 5px !important;
+    color:#101010;
+    font-family: 'Poppins', sans-serif;
+    size:12px;
+    line-height:18px;
+    margin-bottom: 5%!important ;
+  }
+  .location-container {
+
+    align-items: center;
+    margin-top: 0%;
+  }
+  .location-icon{
+    color:#F5037C;
+    margin-right: 10px;
+    font-weight: bold;
+    
+  }
+  .bold-text {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .time-text {
+    font-size: 12px;
+    margin-left: 12%;
+  }
+  
+  .text-reset{
+    font-size:12px;
+    text-decoration: none;
+  }
+  .text-reset:hover {
+    text-decoration: underline;
+  }
+  .metodos-pago {
+    margin-top: 10%;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .social-icon a {
+    margin-right: 10px; /* Adjust the value as per your desired spacing */
+  }
+  .social-icon a:hover .icon {
+    color: BLACK; /* Change the color to your desired hover color */
+  }
+  .icon{
+    color:#F5037C;
+  }
+
+
+  
+  .bottom{
+    font-Size: 14px;
+ 
+  }
+  .row{
+    margin-left:0% !important;
+
+  }
+  .row div{
+    margin-left:2% !important;
+
+  }
+  .custom-margin {
+    
+    margin-left: 30%!important;
+  }
+  .text{
+    font-size: 12px;
+  }
+  .repo {
+    color: #101010;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .repo:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+
+
+/*Media 1024*/
+  @media (max-width: 1024px) {
+  .line-container{
+    width:1024px;
+  }
+  .top-container{
+    width:1024px;
+}
+}
+/*Media 768*/
+@media (max-width: 768px) {
+  .line-container {
+    width: 100%;
+    max-width: 768px;
+
+  }
+.titR {
+  margin-top: 15%;
+}
+  .top-container {
+    width: 100%;
+    max-width: 768px;
+  }
+.custom-preg{
+  margin-left: 80%;
+  margin-top: 10%;
+}
+
+.custom{
+  margin-top: 15%;
+  margin-left: 80%;
+}
+  .custom-h6{
+  margin-left: 80%;
+  margin-top: 5%;
+}
+
+.text{
+  margin-left: 80%;
+  justify-content: center;
+}
+
+.icon-retiro{
+  margin-left: 73%;
+}
+.line-container p {
+  font-size: 12px;
+}
+}
+/*Media 360*/
+@media (max-width: 360px){
+.footer{
+  width: 360px;
+
+}
+.line-container{
+
+  height: 110px;
+}
+.top-container{
+
+  height: 900px;
+}
+.custom-preg{ 
+  margin-left: 0%;
+}
+.custom{
+  margin-left: -3%;
+}
+  .custom-h6{
+  margin-left: -5%;
+}
+.text{
+  margin-left:-5%;
+
+}
+.icon-retiro{
+  margin-left: 4%;
+}
+
+.bold-text{
+  margin-right:10%;
+}
+.nazc{
+  margin-left: 0%;
+}
+.moticon-nazc{
+  margin-left: -100%;
+}
+
+.text-cor{
+  margin-left: -43%;
+}
+.text-nazc{
+  margin-left: -8%;
+}
+.metodos-pago{
+  margin-left: -15%;
+}
+.MPMP{
+
+margin-left: -5% !important;
+  
+}
+.MPE{
+  margin-left: -47% !important;
+}
+.MPT{
+  margin-left: -33% !important;
+}
+.MPU{
+  margin-left: -15% !important;
+}
+.facebook{
+  margin-left: -30%;
+}
+.faq-item-q{
+ margin-left: -20% !important;
+}
+.faq-item-p{
+  margin-left: 0% !important;
+}
+.faq-item-pa{
+  margin-left: -44% !important;
+}
+.faq-item-e{
+  margin-left: -43% !important;
+}
+.faq-item-c{
+  margin-left: -38% !important;
+}
+.tit{
+  margin-left: -40%;
+}
+.repo-lau{
+  margin-left: 4%;
+}
+.repo-moni{
+  margin-left: 6%; 
+}
+
+.repo-gian{
+  margin-left: 13%; 
+}
+.media{
+  width: 310px !important;
+  margin-left: -2000%;
+
+}
+}
+
+

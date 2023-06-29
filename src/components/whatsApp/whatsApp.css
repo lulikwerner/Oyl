@@ -1,0 +1,33 @@
+.whatsapp-container {
+  position: fixed;
+  bottom: 20;
+  right: 20px;
+  z-index: 9999;
+}
+
+#hijo_uno {
+  display: inline-block;
+  height: 10%;
+  width: 6%;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+  .whatsapp-container {
+    top: 20%;
+  }
+
+  #hijo_uno {
+    top:27%;
+    margin-right: -3%;
+    width: 45px;
+    height: 45px;
+  }
+}
