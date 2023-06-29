@@ -11,17 +11,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <WhatsApp />
       <Routes>
         <Route path="/" element={<CustomContainer />} />
-        <Route path="/PreguntasFrecuentes" element={<FAQS />} />
+        <Route path="/PreguntasFrecuentes" element={<FAQS/>} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      
       <Footer className="footer-container" />
-    </Router>
+      </BrowserRouter>
   );
 }
 
