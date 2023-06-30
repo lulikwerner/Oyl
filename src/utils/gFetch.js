@@ -1,12 +1,12 @@
 let products = [
-  { id: 1, img: "/public/assets/img/dia.png" },
-  { id: 2, img: "../public/assets/img/noche.png" },
-  { id: 3, img: "../../public/assets/img/abrigos.png" },
+  { id: 1, img: "../assets/img/dia.png" },
+  { id: 2, img: "../assets/img/noche.png" },
+  { id: 3, img: "../assets/img/abrigos.png" },
   { id: 4, img: "../assets/img/calzado.png" },
-  { id: 5, img: "../public/assets/img/jeans.png" },
-  { id: 6, img: "../public/assets/img/camisas.png" },
-  { id: 7, img: "../public/assets/img/accesorios.png" },
-  { id: 8, img: "../public/assets/img/giftcard.png" },
+  { id: 5, img: "../assets/img/jeans.png" },
+  { id: 6, img: "../assets/img/camisas.png" },
+  { id: 7, img: "../assets/img/accesorios.png" },
+  { id: 8, img: "../assets/img/giftcard.png" },
 ];
 
 export const gFetch = () =>
