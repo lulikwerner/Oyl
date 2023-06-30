@@ -6,6 +6,7 @@ import { TiLocationOutline } from 'react-icons/ti';
 import { BsFacebook, BsInstagram, BsTiktok } from 'react-icons/bs'
 import {GoTriangleRight} from 'react-icons/go';
 import { Link, NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -20,9 +21,12 @@ const [isMobile, setIsMobile] = useState(false);
 useEffect(() => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+   
     console.log(section);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({ top, behavior: 'smooth' });
+     
     }
   };
   // Call scrollToSection after a delay to ensure the sections are rendered
@@ -104,39 +108,38 @@ useEffect(() => {
               <p className="faq-item-q">
               <GoTriangleRight className="location-icon text" />
             
-              <Link    to="/PreguntasFrecuentes#section1"
+              <HashLink    to="/PreguntasFrecuentes#section1" smooth onClick={() => scrollToSection('section1')}
             className="text-reset"
-            onClick={() => scrollToSection('section1')}
-         
+
           >
              ¿QUIÉNES SOMOS?
              
-          </Link>
+          </HashLink >
 
               </p>
               <p className="faq-item-p">
               <GoTriangleRight className="location-icon text" />
-              <Link to="/preguntasfrecuentes#section2" className="text-reset arrow-cursor" onClick={() => handleScroll('section2', sectionOffsets.section2)}>
+              <HashLink to="/preguntasfrecuentes#section2" className="text-reset arrow-cursor" >
              ¿COMO REALIZAR UN PEDIDO?
-                </Link>
+                </HashLink>
               </p>
               <p className="faq-item-pa">
               <GoTriangleRight className="location-icon text" />
-              <Link to="/preguntasfrecuentes#section2" className="text-reset arrow-cursor" onClick={() => handleScroll('section2', sectionOffsets.section2)}>
+              <HashLink to="/preguntasfrecuentes#section2" className="text-reset arrow-cursor">
                PAGO
-                  </Link>
+                  </HashLink>
               </p>
               <p className="faq-item-e">
               <GoTriangleRight className="location-icon text" />
-              <Link to="/preguntasfrecuentes#section3" className="text-reset arrow-cursor" onClick={() => handleScroll('section3', sectionOffsets.section3)}>
+              <HashLink to="/preguntasfrecuentes#section3" className="text-reset arrow-cursor" >
                ENVÍO
-                  </Link>
+                  </HashLink>
               </p>
               <p className="faq-item-c">
               <GoTriangleRight className="location-icon text" />
-              <Link to="/preguntasfrecuentes#section4" className="text-reset arrow-cursor" onClick={() => handleScroll('section4', sectionOffsets.section4)}>
+              <HashLink  to="/preguntasfrecuentes#section4" className="text-reset arrow-cursor">
                CAMBIOS
-                </Link>
+                </HashLink >
               </p>
             </div>
           </div>

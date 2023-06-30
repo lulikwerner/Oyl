@@ -2,11 +2,20 @@
     width: 100%;
 
   }
-  
+
   .responsive-image {
     width: 100%;
   }
-
+  @media only screen and (max-width: 720px){
+    .responsive-image {
+      height: 200px;
+      width: 700px;
+    }
+    .containerPF{
+      width:700px;
+    }
+  
+  }
   @media only screen and (max-width: 360px){
     .responsive-image {
       height: 200px;

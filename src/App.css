@@ -12,12 +12,16 @@
   grid-gap: 0rem; /* Adjust the gap between columns */
 }
 
+@media only screen and (max-width: 720px){
+  header{
+    width: 720px;
+}
+}
 @media only screen and (max-width: 360px){
 
   header{
     width: 360px;
     height: 100%;
- 
   }
   
   nav{

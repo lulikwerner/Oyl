@@ -128,9 +128,128 @@ margin-left: -5%;
 
 }
 
+@media only screen and (max-width: 720px) {
+  /* Navbar.css */
+header {
+  width:720PX;
+  position: fixed;
+  height: 8%;
+}
+  nav {
+    height: 8vh;
+  }
+  #retrato{
+    margin-top: 8%;
+    width:720px;
+    height:370px;
+   }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    top: 0%;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+  }
 
+  .menu li {
+    margin-top: 0px; /* Adjust the margin as needed */
+  }
+
+  .menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #F5037C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    font-family: 'Poppins';
+  }
+
+  .menu a.active,
+  .menu a:hover {
+    text-decoration: underline;
+    /* Add any other hover styles you want */
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submenu li {
+    padding-left: 30px;
+    float: none;
+  }
+  .dropdown_menu {
+    display: none;
+  }
+
+  .open-menu,
+  .close-menu {
+    position: absolute;
+    display: block;
+  }
+
+  .open-menu {
+    position: relative;
+    margin-left:-3%;
+    margin-top: 3%;
+    ul li {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  .close-menu {
+    margin-top: -5%;
+      ul li {
+      top: -50%;
+
+    }
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  nav {
+    height: 6vh;
+  }
+
+  .logo img {
+    display: none;
+  }
+  .inicio {
+    margin-left: 20%;
+    margin-top:50%;
+    margin-bottom:5%;
+
+  }
+  .produNav{
+    margin-top: 25%;
+    margin-bottom: 30%;
+    margin-left: 20%;
+  }
+  .pregFrec{
+    margin-bottom: 10%;
+    margin-left: 20%;
+  }
+
+}
 
 @media only screen and (max-width: 360px) {
+  #retrato{
+    margin-top: 10%;
+    width:360px;
+    height:250px;
+   }
   /* Navbar.css */
 header {
   position: fixed;
@@ -191,12 +310,14 @@ header {
 
   .open-menu,
   .close-menu {
+    margin-top: -15%;
     position: absolute;
     display: block;
   }
 
   .open-menu {
     position: relative;
+    margin-top: 1%;
     ul li {
       top: 50%;
       right: 20px;

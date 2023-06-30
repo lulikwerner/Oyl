@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../public/assets/img/logo.png';
 import '../Navbar/Navbar.css';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const scrollToSection = () => {

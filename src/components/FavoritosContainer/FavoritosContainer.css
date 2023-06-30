@@ -1,15 +1,12 @@
 .titleFavs{
+    display:flex;
+    justify-content: center;
     color:F5037C;
     margin-top: 3%;
-    margin-left:35%
-
 }
 
+
 @media only screen and (max-width: 360px){
-    .titleFavs{
-        margin-left:29%;
-        
-    }
     .titleFavs h1{
         font-size: 18px;
         

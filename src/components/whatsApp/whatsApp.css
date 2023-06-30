@@ -18,7 +18,18 @@ img {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 720px) {
+  .whatsapp-container {
+    top: 20%;
+  }
 
+  #hijo_uno {
+    top:45%;
+    margin-right: 0%;
+    width: 60px;
+    height: 60px;
+  }
+}
 @media only screen and (max-width: 360px) {
   .whatsapp-container {
     top: 20%;

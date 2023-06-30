@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  align-items: center; /* horizontally center the content */
-  justify-content: center; 
+  align-items: center; 
+  align-self: center; 
   flex-direction: column;
   margin-top: 5%;
   position: relative;
@@ -39,6 +39,24 @@
     width: 100%;
   }
 
+
+
+
+  @media only screen and (max-width: 720px){
+  .itemCont {
+    width: 700px;
+    margin-left: -2%;
+  }
+  .responsive-image{
+    height: 400px;
+  }
+  .favoritosCont {
+    margin-left: 5%;
+    width: 650px;
+    height: 400px;
+  }
+  }
+
   @media only screen and (max-width: 360px){
     .container {
       margin: 0%; 
@@ -57,7 +75,7 @@
     }
     .favoritosCont {
       margin-left: 8%;
-      margin-bottom: 0%;
+      margin-bottom: 5%;
       top: 0px;
       width: 300px;
       height: 200px;

@@ -13,7 +13,7 @@ const ItemListContainer = () => {
       console.log(resp); // Log the products array
     })
       .catch(err => console.log(err))
-      .finally(() => console.log('at the end'));
+      .finally();
   }, []);
 
   return (
