@@ -1,20 +1,24 @@
 .favoritos-container {
     display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
     margin-top: 20px;
 
     }
-  
+
   .favoritos-row {
     display: flex;
+    justify-self: center;
     flex-direction: row;
     margin-top: -2%;
+    padding-left:2%;
+    padding-right: 10%;
   }
   
   .favoritos-col {
     width: 25%;
-    margin: 10px 10px 10px10px;
+    margin: 10px 10px 10px 10px;
   }
   .flor{
     position: absolute;
@@ -56,6 +60,16 @@
       width: 30%;
       margin: 1px 3px; 
     }
+      .favoritos-row {
+    display: flex;
+    align-self: flex-end center;
+    flex-direction: row;
+    padding-right: 12%;
+  }
+  .favoritos-col {
+    width: 25%;
+    margin: 10px 10px 10px 10px;
+  }
   }
   @media only screen and (max-width: 360px){
     .favoritos-col {
