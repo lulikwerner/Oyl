@@ -7,33 +7,33 @@ import { BsFacebook, BsInstagram, BsTiktok } from 'react-icons/bs'
 import {GoTriangleRight} from 'react-icons/go';
 import { Link, NavLink } from 'react-router-dom';
 
+
+
 function Footer() {
+
   const lauraSalasRepoUrl = 'https://www.behance.net/laurasalas9';
   const monicaBravoRepoUrl = 'https://www.behance.net/monicabravouxdesign';
   const lucilaWernerRepoUrl = 'https://lkwportafolio.netlify.app/';
   const giancarloOblitasoRepoUrl='https://www.linkedin.com/in/giancarlo-oblitas-60b77623b';
 
-
-  const [isMobile, setIsMobile] = useState(false);
-  const handleScroll = (sectionId, offset) => {
+const [isMobile, setIsMobile] = useState(false);
+useEffect(() => {
+  const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    console.log(section);
     if (section) {
-      setTimeout(() => {
-        const elementPosition = section.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset + offset;
-  
-        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-      }, 100);
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  const sectionOffsets = {
-    section1: isMobile ? -250 : -250,
-    section2: isMobile ? -250 : -200,
-    section3: isMobile ? -250 : -200,
-    section4: isMobile ? -250 : -200,
-    // Add more sections and offsets as needed
-  };
+  // Call scrollToSection after a delay to ensure the sections are rendered
+  setTimeout(() => {
+    scrollToSection('section1');
+    scrollToSection('section2');
+    scrollToSection('section3');
+    scrollToSection('section4');
+  }, 1000); // Adjust the delay as needed
+}, []); 
+  
 
   return (
     <footer className="footer">
@@ -103,16 +103,16 @@ function Footer() {
               <h6 className="text-uppercase fw-bold mb-4 titR  custom-preg">PREGUNTAS FRECUENTES</h6>
               <p className="faq-item-q">
               <GoTriangleRight className="location-icon text" />
-              <NavLink
-  to="/preguntasfrecuentes#section1"
-  className="text-reset arrow-cursor"
-  onMouseDown={(e) => {
-    e.preventDefault();
-    handleScroll('section1', isMobile ? -250 : -200);
-  }}
->
+            
+              <Link    to="/PreguntasFrecuentes#section1"
+            className="text-reset"
+            onClick={() => scrollToSection('section1')}
+         
+          >
              ¿QUIÉNES SOMOS?
-          </NavLink>
+             
+          </Link>
+
               </p>
               <p className="faq-item-p">
               <GoTriangleRight className="location-icon text" />

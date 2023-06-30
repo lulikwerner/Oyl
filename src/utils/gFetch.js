@@ -24,7 +24,7 @@ export const gFetch = () =>
 let options = [
   {
     id: "section1",
-    img: "../public/assets/img/Icono-laptop-heart.png",
+    img: "../assets/img/Icono-laptop-heart.png",
     title: "¿Quienes Somos?",
     description:`¡Hola! Soy Lucía, decidí dar un gran paso hacia el emprendimiento para lograr mi objetivo de finalizarmi carrera.Superar 
     ese desafío se volvía cada vez más difícil con mi trabajo en relación de dependencia, así que decidí tomar las riendas de
@@ -40,7 +40,7 @@ let options = [
   },
   {
     id: "section2",
-    img: "../public/assets/img/Icono-SHOP.png",
+    img: "../assets/img/Icono-SHOP.png",
     title: "¿Cómo realizar un pedido?",
     description:`Realizar un pedido en nuestra tienda es muy sencillo. Sigue estos  pasos y estarás en camino de obtener tus looks favoritos:
     <ol>
@@ -59,7 +59,7 @@ let options = [
   },
   {
     id: "section3",
-    img: "../public/assets/img/IconoGift.png",
+    img: "../assets/img/IconoGift.png",
     title: "Envíos",
     description:`Realizamos envíos a todo el país para que siempre puedas tener un poquito de OYL junto a vos.Opciones:
     <ol>
@@ -80,7 +80,7 @@ let options = [
   },
   {
     id: "section4",
-    img: "../public/assets/img/Icono.cambios.png",
+    img: "../assets/img/Icono.cambios.png",
     title: "Cambios",
     description:` Información importante sobre nuestra política de cambios:
     <ol>

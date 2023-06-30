@@ -22,13 +22,13 @@ const Navbar = () => {
         <ul>
           <li className="logo">
             <NavLink to="/" className="logo">
-              <img src={logo} alt="OYL logo" />
+              <img src={logo} alt="" />
             </NavLink>
           </li>
           <input type="checkbox" id="check" />
           <div className="menu">
             <li className="inicio">
-              <NavLink to="/"  onClick={scrollToSectionNav } className="Option-Nav" activeClassName="active">
+              <NavLink to="/"  onClick={scrollToSectionNav } className="Option-Nav" activeclassName="active">
                 Inicio
               </NavLink>
             </li>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 to="/PreguntasFrecuentes"
                 onClick={scrollToSection} 
                 className="Option-Nav"
-                activeClassName="active"
+                activeclassName="active"
               >
                 Preguntas Frecuentes
               </NavLink>
