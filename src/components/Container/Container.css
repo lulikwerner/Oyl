@@ -1,7 +1,6 @@
 .container {
   display: flex;
   align-items: center; 
-
   flex-direction: column;
   margin-top: 5%;
   position: relative;
@@ -47,15 +46,13 @@
     width: 700px;
     margin-left: -2%;
   }
-  .responsive-image{
-    height: 400px;
-  }
+ 
   .favoritosCont {
     margin-left: 5%;
     width: 650px;
     height: 400px;
   }
-  }
+}
 
   @media only screen and (max-width: 360px){
     .container {
