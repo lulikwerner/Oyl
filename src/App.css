@@ -12,6 +12,18 @@
   grid-gap: 0rem; /* Adjust the gap between columns */
 }
 
+@media only screen and (max-width: 1366px){
+  header{
+    width: 1366px;
+}
+}
+
+@media only screen and (max-width: 1020px){
+  header{
+    width: 1020px;
+}
+}
+
 @media only screen and (max-width: 720px){
   header{
     width: 720px;

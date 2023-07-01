@@ -6,7 +6,6 @@ import WhatsApp from './components/whatsApp/whatsApp';
 import CustomContainer from './components/Container/Container';
 import FAQS from './components/FAQS/FAQS';
 
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

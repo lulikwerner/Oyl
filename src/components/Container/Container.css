@@ -38,8 +38,18 @@
     width: 100%;
   }
 
-
-
+  @media only screen and (max-width: 1020px){
+    .itemCont {
+      width: 1000px;
+      margin-left: -2%;
+    }
+   
+    .favoritosCont {
+      margin-left: 1%;
+      width: 1000px;
+      height: 500px;
+    }
+  }
 
   @media only screen and (max-width: 720px){
   .itemCont {
