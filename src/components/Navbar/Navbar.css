@@ -23,7 +23,6 @@ nav{
   color:black;
   margin-left: 50%;
 
-
   a {
     margin-top: -10%;
     display: block;
@@ -115,6 +114,7 @@ margin-left: -5%;
   display: none;
 }
 .logo{
+  margin-left: 0%;
   list-style: none;
 }
 .logo img {
@@ -127,20 +127,61 @@ margin-left: -5%;
 
 
 }
+@media only screen and (max-width: 1366px){
+  header{
+    width: 1366px;
+    height: 130px;
+}
+}
 
+@media only screen and (max-width: 1020px){
+  header{
+    width: 1020px;
+}
+#retrato{
+  margin-top: 11%;
+ }
+.menu{
+  display: flex;
+  align-items: row;
+}
+.menu a {
+  padding: 0px;
+  font-size: 18px;
+  line-height: 33px;
+ 
+}
+.menu li {
+  padding-left: -50%;/* Adjust the margin as needed */
+}
+.pregFrec{
+  margin-left: 500px;
+  margin-top: -17%;
+}
+.produNav{
+  margin-top: -17%;
+}
+.inicio{
+  margin-top: -17%;
+}
+.open-menu {
+  display:none
+}
+}
 @media only screen and (max-width: 720px) {
   /* Navbar.css */
 header {
-  width:720PX;
+  width:720PX !important;
   position: fixed;
   height: 65px;
 }
   nav {
     height: 8vh;
+    width:700PX;
   }
   #retrato{
     margin-top: 8%;
-    width:720px;
+   width: 720px;
     height:370px;
    }
   .menu {
@@ -199,8 +240,8 @@ header {
 
   .open-menu {
     position: relative;
-    margin-left:-3%;
-    margin-top: 3%;
+    margin-left:-1%;
+    margin-top: 2%;
     ul li {
       top: 50%;
       right: 20px;
@@ -208,7 +249,7 @@ header {
     }
   }
   .close-menu {
-    margin-top: -5%;
+    margin-top: -6%;
       ul li {
       top: -50%;
 
@@ -245,18 +286,22 @@ header {
 }
 
 @media only screen and (max-width: 360px) {
-  #retrato{
-    margin-top: 10%;
-    width:100%;
-    height:250px;
-   }
-  /* Navbar.css */
-header {
+  header {
   position: fixed;
+  width:360px;
   height: 40px;
 }
+  
+  #retrato{
+    margin-top: 10%;
+    height:250px;
+     width:100%;
+   }
+  /* Navbar.css */
+
   nav {
     height: 5vh;
+     width:360px;
   }
 
   .menu {
@@ -353,34 +398,9 @@ header {
     margin-left: 10%;
   }
 
-  @media only screen and (max-width: 1366px){
-    nav{
-      width: 1366px;
-    }
 
-    header{
-      margin:0%;
-    }
 
-    ul{
-      padding-left: 0px;
-      margin-bottom: 0px;
-    }
-  }
 
-  @media only screen and (max-width: 1020px){
-    header{
-      width: 1020px;
-    }
-
-    nav{
-      width: 1020px;
-    }
-
-    #retrato{
-      width: 1020px;
-    }
-  }
 
 }
 

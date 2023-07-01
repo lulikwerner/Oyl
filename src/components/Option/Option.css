@@ -51,6 +51,22 @@
         width: 1024px;
     }
 }
+@media only screen and (max-width: 1020px){
+    .cardhoverP{
+        margin-left: 0%;
+        width:1020px;
+        
+    }
+.containerP{
+    width:87%;
+    margin-left: 8%;
+}
+.contentColumn{
+    width:90%
+}
+
+}
+
 
 @media only screen and (max-width: 720px){
 
@@ -91,11 +107,12 @@
     font-size: 12px;
     line-height: 15px;
     padding-left: 5%;
-    padding-right: 3%;
+    padding-right: 5%;
+    width: 500px;
 }
 
 .centered-text {
-    width: 600px;
+    width: 500px;
     height: 90px;
 }
 

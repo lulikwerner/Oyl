@@ -45,22 +45,33 @@
     }
    
     .favoritosCont {
-      margin-left: 1%;
-      width: 1000px;
+      margin-left: 3%;
+      width: 950px;
       height: 500px;
+    }
+    .container {
+      margin-left: 8% !important;
+    }
+    .favoritos-col{
+      width: 220px;
     }
   }
 
   @media only screen and (max-width: 720px){
+
   .itemCont {
     width: 700px;
-    margin-left: -2%;
+    margin-left: 5%;
   }
  
   .favoritosCont {
     margin-left: 5%;
     width: 650px;
     height: 400px;
+  }
+  .favoritos-col{
+    margin-top: 4%;
+    width: 150px;
   }
 }
 
@@ -86,5 +97,9 @@
       top: 0px;
       width: 300px;
       height: 200px;
+    }
+    .favoritos-col{
+      margin-top: 4%;
+      width: 65px;
     }
   }

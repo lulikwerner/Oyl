@@ -12,43 +12,4 @@
   grid-gap: 0rem; /* Adjust the gap between columns */
 }
 
-@media only screen and (max-width: 1366px){
-  header{
-    width: 1366px;
-}
-}
 
-@media only screen and (max-width: 1020px){
-  header{
-    width: 1020px;
-}
-}
-
-@media only screen and (max-width: 720px){
-  header{
-    width: 720px;
-}
-}
-@media only screen and (max-width: 360px){
-
-  header{
-    width: 360px;
-    height: 100%;
-  }
-  
-  nav{
-    display: flex;
-    flex-wrap: wrap;
-    height: 245px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 4px;
-  }
-
-  #retrato{
-    height: 275px;
-    width: 360px;
-  }
-}
