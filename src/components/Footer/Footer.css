@@ -7,7 +7,6 @@
     flex-wrap: wrap;
     align-items: center;
     position: absolute;
-   
 }
 
 .arrow-cursor {
@@ -87,7 +86,6 @@ p {
     font-size: 16px;
   }
   
-
   .social-icon a {
     margin-right: 10px; /* Adjust the value as per your desired spacing */
   }
@@ -129,17 +127,13 @@ p {
     text-decoration: underline;
   }
   
-
-  
-
-
 /*Media 1024*/
-  @media (max-width: 1024px) {
+  @media (max-width: 1020px) {
   .line-container{
-    width:1024px;
+    width:1020px;
   }
   .top-container{
-    width:1024px;
+    width:1020px;
 }
 }
 
@@ -304,5 +298,3 @@ p {
 }
 
 }
-
-
