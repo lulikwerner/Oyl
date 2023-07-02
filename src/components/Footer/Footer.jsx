@@ -44,7 +44,7 @@ useEffect(() => {
       <section className="top-container">
         <div className="containe-f text-center text-md-start mt-5 ">
           <div className="row mt-3 top-container  tit">
-            <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4 media media" >
+            <div className=" col-sm-12 col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 ml-auto mr-4 media ver" >
               <h6 className="text-uppercase fw-bold mb-4 titR custom">
                RETIRO COMPRA ONLINE</h6>
                 <div className="location-container">
