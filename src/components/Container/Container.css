@@ -38,23 +38,7 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 2340px){
-    .itemCont {
-      width: 2340px;
-      margin-left: -2%;
-      padding-left: 200px;
-    }
 
-    .product-con{
-      width: 1300px;
-    }
-
-    .favoritosCont {
-      margin-left: 13%;
-      width: 1700px;
-      height: 800px;
-    }
-  }
 
   @media only screen and (max-width: 1020px){
     .itemCont {

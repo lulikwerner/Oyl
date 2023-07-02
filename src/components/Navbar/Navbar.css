@@ -126,15 +126,6 @@ margin-left: -5%;
   height: 120px;
 }
 
-@media only screen and (max-width: 2340px){
-  header{
-    width: 2340px;
-}
-  
-nav{
-  padding-top: 50px;
-}
-}
 
 @media only screen and (max-width: 1366px){
   header{
